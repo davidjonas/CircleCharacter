@@ -27,10 +27,13 @@ class CircleCharacter extends Creature {
   void draw(float x, float y) {
     t += speed;
     pushMatrix();
-    translate(x, y);    
-    for(Circle c : circles) {
-      c.draw(t);
+    translate(x, y);
+
+    for (int i=0; i<circles.length; i++ )
+    {
+        circles[i].draw(t)
     }
+    
     popMatrix();
   }
 };
