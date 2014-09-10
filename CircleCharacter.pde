@@ -74,10 +74,9 @@ class Circle {
     noFill();
     println("Reached here.");
 
-    float c1 = random(agitation * 100.0);
-    float c2 = random(agitation * 300.0);
-//    stroke(255 - c1, 255 - c2, 255 - c2, alpha + agitation * 50.0);
-    stroke(255);
+    float c1 = random(0, agitation * 100.0);
+    float c2 = random(0, agitation * 300.0);
+    stroke(255 - c1, 255 - c2, 255 - c2, alpha + agitation * 50.0);
 
     strokeWeight(abs(thickness - abs(stroke)));
 
