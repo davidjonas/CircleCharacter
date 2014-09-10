@@ -76,9 +76,9 @@ class Circle {
     float c2 = random(agitation * 300.0);
 //    stroke(255 - c1, 255 - c2, 255 - c2, alpha + agitation * 50.0);
     stroke(255);
-    strokeWeight(abs(thickness - abs(stroke)));
-
     println("Reached here.");
+
+    strokeWeight(abs(thickness - abs(stroke)));
 
 //    ellipse(0, 0, radius * 2.0, radius * 2.0);
 
