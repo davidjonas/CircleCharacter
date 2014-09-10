@@ -29,7 +29,7 @@ class CircleCharacter extends Creature {
     pushMatrix();
     translate(x, y);
 
-    for (int i=0; i<circles.length; i++ )
+    for (int i=0; i<circles.size(); i++ )
     {
         circles[i].draw(t)
     }
