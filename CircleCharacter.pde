@@ -72,11 +72,12 @@ class Circle {
     float alpha = map(x, -1, 1, 80, 180);
 
     noFill();
+    println("Reached here.");
+
     float c1 = random(agitation * 100.0);
     float c2 = random(agitation * 300.0);
 //    stroke(255 - c1, 255 - c2, 255 - c2, alpha + agitation * 50.0);
     stroke(255);
-    println("Reached here.");
 
     strokeWeight(abs(thickness - abs(stroke)));
 
