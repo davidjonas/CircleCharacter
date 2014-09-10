@@ -58,8 +58,6 @@ class Circle {
   
   void draw(float t) {
 
-    println("Reached here.");
-
     float agitation = map(mouseX, 0, width, 0, 1);
     agitation = pow(agitation, 6.0);
 
@@ -79,6 +77,8 @@ class Circle {
 //    stroke(255 - c1, 255 - c2, 255 - c2, alpha + agitation * 50.0);
     stroke(255);
     strokeWeight(abs(thickness - abs(stroke)));
+
+    println("Reached here.");
 
 //    ellipse(0, 0, radius * 2.0, radius * 2.0);
 
