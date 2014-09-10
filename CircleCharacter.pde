@@ -68,16 +68,15 @@ class Circle {
     float x = sin(phase) + random(agitation / 2.0, agitation);
     float rotation = map(x, -1, 1, 0, TWO_PI / 3.0);
     float radius = map(x, -1, 1, minRadius, maxRadius);
-    float stroke = map(x, 0, 1, 0, thickness);
+    float strokeThick = map(x, 0, 1, 0, thickness);
     float alpha = map(x, -1, 1, 80, 180);
 
     noFill();
 
     float c1 = random(0, agitation * 100.0);
     float c2 = random(0, agitation * 300.0);
-    stroke(255 - c1, 255 - c2, 255 - c2, alpha);
-    println("Reached here.");
-    strokeWeight(abs(thickness - abs(stroke)));
+    stroke(255 - c1, 255 - c2, 255 - c2, alpha + agitation * 50.0);
+    strokeWeight(abs(thickness - abs(strokeThick)));
 
 //    ellipse(0, 0, radius * 2.0, radius * 2.0);
 
