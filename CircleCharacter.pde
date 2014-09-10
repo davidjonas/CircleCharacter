@@ -58,6 +58,8 @@ class Circle {
   
   void draw(float t) {
 
+    println("Reached here.");
+
     float agitation = map(mouseX, 0, width, 0, 1);
     agitation = pow(agitation, 6.0);
 
