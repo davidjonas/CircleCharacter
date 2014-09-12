@@ -58,7 +58,9 @@ class Circle {
   
   void draw(float t) {
 
-    float agitation = map(mouseX, 0, width, 0, 1);
+    //float agitation = map(mouseX, 0, width, 0, 1);
+    float agitation = 0;
+    
     agitation = pow(agitation, 6.0);
 
     float dT = t - prevT;
