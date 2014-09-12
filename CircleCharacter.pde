@@ -20,7 +20,7 @@ class CircleCharacter extends Creature {
     for(int i = 0; i < nCircles; i++){
       float phase = map(i, 0, nCircles, 0, TWO_PI / 3.0);
       Circle c = new Circle();
-      c.setup(10, 300, 15, phase);
+      c.setup(10, 100, 15, phase);
       circles[i] = c;
     }
   }
