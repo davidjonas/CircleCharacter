@@ -32,7 +32,7 @@ class CircleCharacter extends Creature {
 
     for (int i=0; i<circles.length; i++ )
     {
-        circles[i].draw(t);
+        circles[i].draw(t, this.agitation);
     }
 
     popMatrix();
@@ -56,10 +56,7 @@ class Circle {
     prevT = 0.0;
   }
   
-  void draw(float t) {
-
-    //float agitation = map(mouseX, 0, width, 0, 1);
-    float agitation = 0;
+  void draw(float t, float agitation) {
     
     agitation = pow(agitation, 6.0);
 
